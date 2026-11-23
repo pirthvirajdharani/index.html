@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>My First Website</title>
+
+  <style>
+   
+
+       body {
+      font-family: Arial, sans-serif;  
+      background-color: #fff8e7;       
+      color: #333333;                  
+      margin: 0;                       
+    }
+
+    /* The top bar */
+    header {
+      background-color: #6a4cff;       
+      color: rgb(204, 66, 66)
+      padding: 20px;                   /* space INSIDE the box */
+      text-align: center;
+    }
+
+    /* Links in the menu */
+    nav a {
+      color: white;
+      margin: 0 12px;                  /* space OUTSIDE: 0 top/bottom, 12px left/right */
+      text-decoration: none;           /* removes the underline */
+    }
+
+    /* The big welcome area */
+    .hero {
+      background-color: #f14d4d;       /* coral red */
+      color: rgb(255, 255, 255);
+      text-align: center;
+      padding: 60px 20px;
+    }
+
+    .hero h1 {
+      font-size: 40px;
+    }
+
+
+    .button {
+      background-color: #ffd166;     
+      color: #333333;
+      padding: 12px 24px;
+      border-radius: 25px;            
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+       .section {
+      padding: 40px 20px;
+      text-align: center;
+    }
+
+    .section h2 {
+      color: #6a4cff;
+    }
+
+    /* The three boxes. A "class" like .box can be reused many times */
+    .box {
+      background-color: white;
+      border: 3px solid #6a4cff;       /* thickness, style, color */
+      border-radius: 12px;
+      padding: 20px;
+      margin: 15px auto;               /* "auto" centers the box */
+      width: 250px;
+    }
+
+    /* Change the box when the mouse is over it */
+    .box:hover {
+      background-color: #ffe8e8;
+    }
+
+    /* The bottom bar */
+    footer {
+      background-color: #6a4cff;
+      color: white;
+      text-align: center;
+      padding: 15px;
+    }
+  </style>
+</head>
+
+<body>
+  <!-- ===== HTML: this part is the CONTENT and structure ===== -->
+
+  <!-- header: the top of the page -->
+  <header>
+    <h2>My First Website</h2>
+    <nav>
+      <a href="#hobbies">Hobbies</a>
+      <a href="#about">About</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <!-- the big welcome area (a div with the class "hero") -->
+  <div class="hero">
+    <h1>Hello, welcome!</h1>
+    <p>I made this page with HTML and CSS.</p>
+    <a class="button" href="#hobbies">See more</a>
+  </div>
+
+  <!-- section 1: the id lets the menu link jump here -->
+  <div class="section" id="hobbies">
+    <h2>My Favorite Things</h2>
+    <div class="box">
+      <h3>🎵 Music</h3>
+      <p>Write about your favorite songs here.</p>
+    </div>
+    <div class="box">
+      <h3>⚽ Sports</h3>
+      <p>Write about your favorite sport here.</p>
+    </div>
+    <div class="box">
+      <h3>🍕 Food</h3>
+      <p>Write about your favorite food here.</p>
+    </div>
+  </div>
+
+  <!-- section 2 -->
+  <div class="section" id="about">
+    <h2>About Me</h2>
+    <p>Change this text to tell people about yourself.</p>
+  </div>
+
+  <!-- section 3 -->
+  <div class="section" id="contact">
+    <h2>Contact</h2>
+    <p>Email: xyz@gmail.com</p>
+  </div>
+
+  <footer>
+    <p>© 2026 All Rights Reserved</p>
+  </footer>
+</body>
+</html>
